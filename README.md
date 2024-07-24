@@ -46,7 +46,7 @@ If you're using the API authorization template, the Aserto policy used is `polic
   "object_type": "endpoint",
   "object_id": `${serviceName}:${httpMethod}:${routePath}`,
   "relation": "can_invoke"
-})
+}
 ```
 
 `${serviceName}:${httpMethod}:${routePath}` is constructed in the following way:
@@ -64,10 +64,10 @@ You can override any of the resource context fields via the following parameters
 * `relation`
 
 Each of these values can be in the following formats:
-1. "string": string literal
-2. "$header(HEADER_NAME)": retrieve the value of request.headers[HEADER_NAME]
-3. "$param(PARAM_NAME)": retrieve the value of request.params[PARAM_NAME]
-4. "$body(BODY_KEY_NAME)": retrieve the value of request.body[BODY_KEY_NAME] (this assumes a JSON body and can be a compound - like x.y.z)
+1. `"string"`: string literal
+2. `"$header(HEADER_NAME)"`: retrieve the value of `request.headers[HEADER_NAME]`
+3. `"$param(PARAM_NAME)"`: retrieve the value of `request.params[PARAM_NAME]`
+4. `"$body(BODY_KEY_NAME)"`: retrieve the value of `request.body[BODY_KEY_NAME]` (this assumes a JSON body and can be a compound - like `x.y.z`)
 
 ### Example
 
