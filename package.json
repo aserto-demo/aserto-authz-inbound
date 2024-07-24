@@ -1,0 +1,13 @@
+{
+  "name": "aserto-authz-inbound",
+  "version": "1.0.0",
+  "description": "Zuplo inbound authorization policy for Aserto",
+  "main": "index.ts",
+  "repository": "https://github.com/aserto-demo/aserto-authz-inbound",
+  "author": "Aserto",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "@zuplo/runtime": "^5.2377.0"
+  }
+}
